@@ -1,0 +1,199 @@
+cabal-version: 1.12
+
+-- This file has been generated from package.yaml by hpack version 0.35.1.
+--
+-- see: https://github.com/sol/hpack
+
+name:           chord-cloud-haskell
+version:        0.1.0.0
+description:    Please see the README on GitHub at <https://github.com/wasabi315/chord-cloud-haskell#readme>
+homepage:       https://github.com/wasabi315/chord-cloud-haskell#readme
+bug-reports:    https://github.com/wasabi315/chord-cloud-haskell/issues
+author:         wasabi315
+maintainer:     wasabi.nvim.st@gmail.com
+copyright:      2023 wasabi315
+license:        BSD3
+license-file:   LICENSE
+build-type:     Simple
+extra-source-files:
+    README.md
+    CHANGELOG.md
+
+source-repository head
+  type: git
+  location: https://github.com/wasabi315/chord-cloud-haskell
+
+library
+  exposed-modules:
+      Network.Chord
+  other-modules:
+      Paths_chord_cloud_haskell
+  hs-source-dirs:
+      src
+  default-extensions:
+      EmptyCase
+      PostfixOperators
+      TupleSections
+      NamedFieldPuns
+      RecordWildCards
+      BangPatterns
+      LambdaCase
+      MultiWayIf
+      ViewPatterns
+      BinaryLiterals
+      HexFloatLiterals
+      GADTs
+      RankNTypes
+      TypeApplications
+      PolyKinds
+      ExistentialQuantification
+      TypeOperators
+      ConstraintKinds
+      TypeFamilies
+      ExplicitForAll
+      PartialTypeSignatures
+      KindSignatures
+      NamedWildCards
+      ScopedTypeVariables
+      FlexibleContexts
+      FlexibleInstances
+      FunctionalDependencies
+      MultiParamTypeClasses
+      ConstrainedClassMethods
+      InstanceSigs
+      TypeSynonymInstances
+      DeriveDataTypeable
+      DeriveFoldable
+      DeriveFunctor
+      DeriveTraversable
+      StandaloneDeriving
+      DeriveLift
+      DeriveGeneric
+      DerivingStrategies
+      DeriveAnyClass
+  ghc-options: -Wall -Wcompat -Widentities -Wincomplete-record-updates -Wincomplete-uni-patterns -Wmissing-export-lists -Wmissing-home-modules -Wpartial-fields -Wredundant-constraints -O2
+  build-depends:
+      base >=4.7 && <5
+    , binary
+    , distributed-process
+    , haskeline
+    , network-transport-tcp
+    , transformers
+  default-language: Haskell2010
+
+executable chord-cloud-haskell-exe
+  main-is: Main.hs
+  other-modules:
+      Paths_chord_cloud_haskell
+  hs-source-dirs:
+      app
+  default-extensions:
+      EmptyCase
+      PostfixOperators
+      TupleSections
+      NamedFieldPuns
+      RecordWildCards
+      BangPatterns
+      LambdaCase
+      MultiWayIf
+      ViewPatterns
+      BinaryLiterals
+      HexFloatLiterals
+      GADTs
+      RankNTypes
+      TypeApplications
+      PolyKinds
+      ExistentialQuantification
+      TypeOperators
+      ConstraintKinds
+      TypeFamilies
+      ExplicitForAll
+      PartialTypeSignatures
+      KindSignatures
+      NamedWildCards
+      ScopedTypeVariables
+      FlexibleContexts
+      FlexibleInstances
+      FunctionalDependencies
+      MultiParamTypeClasses
+      ConstrainedClassMethods
+      InstanceSigs
+      TypeSynonymInstances
+      DeriveDataTypeable
+      DeriveFoldable
+      DeriveFunctor
+      DeriveTraversable
+      StandaloneDeriving
+      DeriveLift
+      DeriveGeneric
+      DerivingStrategies
+      DeriveAnyClass
+  ghc-options: -Wall -Wcompat -Widentities -Wincomplete-record-updates -Wincomplete-uni-patterns -Wmissing-export-lists -Wmissing-home-modules -Wpartial-fields -Wredundant-constraints -O2
+  build-depends:
+      base >=4.7 && <5
+    , binary
+    , chord-cloud-haskell
+    , distributed-process
+    , haskeline
+    , network-transport-tcp
+    , transformers
+  default-language: Haskell2010
+
+test-suite chord-cloud-haskell-test
+  type: exitcode-stdio-1.0
+  main-is: Spec.hs
+  other-modules:
+      Paths_chord_cloud_haskell
+  hs-source-dirs:
+      test
+  default-extensions:
+      EmptyCase
+      PostfixOperators
+      TupleSections
+      NamedFieldPuns
+      RecordWildCards
+      BangPatterns
+      LambdaCase
+      MultiWayIf
+      ViewPatterns
+      BinaryLiterals
+      HexFloatLiterals
+      GADTs
+      RankNTypes
+      TypeApplications
+      PolyKinds
+      ExistentialQuantification
+      TypeOperators
+      ConstraintKinds
+      TypeFamilies
+      ExplicitForAll
+      PartialTypeSignatures
+      KindSignatures
+      NamedWildCards
+      ScopedTypeVariables
+      FlexibleContexts
+      FlexibleInstances
+      FunctionalDependencies
+      MultiParamTypeClasses
+      ConstrainedClassMethods
+      InstanceSigs
+      TypeSynonymInstances
+      DeriveDataTypeable
+      DeriveFoldable
+      DeriveFunctor
+      DeriveTraversable
+      StandaloneDeriving
+      DeriveLift
+      DeriveGeneric
+      DerivingStrategies
+      DeriveAnyClass
+  ghc-options: -Wall -Wcompat -Widentities -Wincomplete-record-updates -Wincomplete-uni-patterns -Wmissing-export-lists -Wmissing-home-modules -Wpartial-fields -Wredundant-constraints -O2
+  build-depends:
+      base >=4.7 && <5
+    , binary
+    , chord-cloud-haskell
+    , distributed-process
+    , haskeline
+    , network-transport-tcp
+    , transformers
+  default-language: Haskell2010
